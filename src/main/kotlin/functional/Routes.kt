@@ -1,0 +1,7 @@
+package functional
+
+
+object UserRoutes {
+
+
+}
