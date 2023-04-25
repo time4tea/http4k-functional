@@ -17,6 +17,8 @@ dependencies {
     implementation ("org.http4k:http4k-format-jackson")
     implementation ("org.http4k:http4k-client-okhttp")
 
+    testImplementation ("org.http4k:http4k-testing-strikt")
+
     testImplementation(kotlin("test"))
 }
 
