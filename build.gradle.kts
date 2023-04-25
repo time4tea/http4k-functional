@@ -20,6 +20,7 @@ dependencies {
     testImplementation ("org.http4k:http4k-testing-strikt")
 
     testImplementation(kotlin("test"))
+    testImplementation ("org.jsoup:jsoup:1.15.4")
 }
 
 tasks.test {
