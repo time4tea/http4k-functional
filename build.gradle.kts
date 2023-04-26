@@ -12,7 +12,6 @@ graalvmNative {
     binaries {
         named("main") {
             verbose.set(true)
-            configurationFileDirectories.from(file("src/main/resources/META-INF/native-image"))
         }
     }
 }
