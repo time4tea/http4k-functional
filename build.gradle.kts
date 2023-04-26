@@ -1,5 +1,20 @@
 plugins {
     kotlin("jvm") version "1.8.0"
+    id("application")
+    id("org.graalvm.buildtools.native") version "0.9.21"
+}
+
+application.mainClassName = "functional.ApplicationKt"
+
+graalvmNative {
+    // Download graal jdk `bash <(curl -sL https://get.graalvm.org/jdk)`
+    // Set environment variable GRAALVM_HOME
+    binaries {
+        named("main") {
+            verbose.set(true)
+            configurationFileDirectories.from(file("src/main/resources/META-INF/native-image"))
+        }
+    }
 }
 
 group = "net.time4tea"

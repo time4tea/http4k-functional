@@ -26,7 +26,7 @@ fun theApplication(): PolyHandler {
 
 fun main() {
 
-    ManagementFactory.getPlatformMXBean(PlatformLoggingMXBean::class.java).setLoggerLevel("", "SEVERE")
+//    ManagementFactory.getPlatformMXBean(PlatformLoggingMXBean::class.java).setLoggerLevel("", "SEVERE") - not in graal??
 
     val time = System.currentTimeMillis()
 
