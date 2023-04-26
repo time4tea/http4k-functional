@@ -15,11 +15,11 @@ According to the talk, the Spring Boot version starts up in:
 
 GraalVM 22.3.1 Java 17 CE
 
-My test:
+My test for spring-functional:
 
 `CPU 8.00/RAM 64.0  - JVM 1.23 seconds, Native  0.051 seconds (my desktop)`
 
-I've not tested the same configuration on Azure yet...
+My test for http4k-functional:
 
 `CPU 8.00/RAM 64.0  - JVM 0.35 seconds, Native  0.026 seconds (my desktop)`
 
