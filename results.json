@@ -2,7 +2,7 @@
   {"env": "azure", "tech": "spring", "type": "jvm" ,"desc":  "CPU 0.25/RAM 0.5", "time": 21.00 },
   {"env": "azure", "tech": "spring", "type": "nat" ,"desc":  "CPU 0.25/RAM 0.5", "time": 0.106 },
   {"env": "azure", "tech": "spring", "type": "jvm" ,"desc":  "CPU 2.00/RAM 4.0", "time": 2.00 },
-  {"env": "azure", "tech": "spring", "type": "nat" ,"desc":  "CPU 2.00/RAM 4.0", "time": 0.32 },
+  {"env": "azure", "tech": "spring", "type": "nat" ,"desc":  "CPU 2.00/RAM 4.0", "time": 0.032 },
   {"env": "deskt", "tech": "spring", "type": "jvm" ,"desc":  "CPU 8.00/RAM64.0", "time": 1.23 },
   {"env": "deskt", "tech": "spring", "type": "nat" ,"desc":  "CPU 8.00/RAM64.0", "time": 0.051 },
   {"env": "azure", "tech": "http4k", "type": "jvm" ,"desc":  "CPU 0.25/RAM 0.5", "time": 4.29 },
