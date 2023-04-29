@@ -1,5 +1,5 @@
 
-rootProject.name = "http4k-usersse"
+rootProject.name = "http4k-functional"
 
 pluginManagement {
     repositories {

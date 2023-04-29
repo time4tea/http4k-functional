@@ -34,6 +34,6 @@ fun main() {
 
     val started = Duration.ofMillis(System.currentTimeMillis() - time)
 
-    print("Server started in $started")
+    println("Server started in $started")
     server.block()
 }

@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.20"
+    kotlin("jvm") version "1.8.0"
     id("application")
     id("org.graalvm.buildtools.native") version "0.9.21"
 }
@@ -12,6 +12,8 @@ graalvmNative {
     binaries {
         named("main") {
             verbose.set(true)
+//            buildArgs.add("-H:+StaticExecutableWithDynamicLibC")
+            buildArgs.add("--static")
         }
     }
 }
