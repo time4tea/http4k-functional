@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.8.0"
     id("application")
     id("org.graalvm.buildtools.native") version "0.9.21"
+    id("com.google.cloud.tools.jib") version "3.3.1"
 }
 
 application.mainClassName = "functional.ApplicationKt"
@@ -17,6 +18,17 @@ graalvmNative {
         }
     }
 }
+
+jib.from.image="eclipse-temurin:17-jre-alpine@sha256:f59c1acc26975859545eabb2051f4b9a41d5ef278aad9dfe42bdb0aff5611613"
+jib.to.image = "http4k-functional-jib"  // same as IMAGE in Makefile
+jib.container.jvmFlags = listOf(
+    "-XX:+AlwaysActAsServerClassMachine",
+    "-XX:InitialRAMPercentage=70.0",
+    "-XX:MinRAMPercentage=70.0",
+    "-XX:MaxRAMPercentage=70.0",
+    "-XX:+ExitOnOutOfMemoryError",
+    "-XshowSettings:vm",
+)
 
 group = "net.time4tea"
 version = "1.0-SNAPSHOT"
