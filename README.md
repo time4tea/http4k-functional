@@ -6,20 +6,23 @@ A re-implementation of https://github.com/sdeleuze/spring-kotlin-functional but 
 I was interested after Sebastien's talk at KotlinConf to see how app start up time compared. I have attempted to
 make a faithful translation, any differences are not intentional.
 
+The http4k version is not optimised - I tried to just make the simplest version that would work.
+
 According to the talk, the Spring Boot version starts up in:
 
-`CPU 0.25/RAM 0.5   - JVM 21 seconds, Native 0.106 seconds`
+`Azure Container CPU 0.25/RAM 0.5   - JVM 21 seconds, Native 0.106 seconds (Seb)`
 
-`CPU 2.00/RAM 4.0   - JVM  2 seconds, Native 0.032 seconds`
+`Azure Container CPU 2.00/RAM 4.0   - JVM  2 seconds, Native 0.032 seconds (Seb)`
 
+for comparison on my 2016 desktop:
 
-GraalVM 22.3.1 Java 17 CE
-
-My test for spring-functional:
-
-`CPU 8.00/RAM 64.0  - JVM 1.23 seconds, Native  0.051 seconds (my desktop)`
+`Desktop CPU 8.00/RAM 64.0  - JVM 1.23 seconds, Native  0.051 seconds (James)`
 
 My test for http4k-functional:
 
-`CPU 8.00/RAM 64.0  - JVM 0.35 seconds, Native  0.026 seconds (my desktop)`
+`Azure Container CPU 0.25/RAM 0.5   - JVM 4.29 seconds, Native  0.011 seconds (James)`
+
+`Azure Container CPU 2.00/RAM 4.0   - JVM 0.52 seconds, Native 0.008 seconds (James)`
+
+`Desktop         CPU 8.00/RAM 64.0  - JVM 0.35 seconds, Native  0.026 seconds (James)`
 
