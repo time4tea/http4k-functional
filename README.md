@@ -28,3 +28,15 @@ My test for http4k-functional:
 
 `Desktop         CPU 8.00/RAM 64.0  - JVM 0.35 seconds, Native  0.026 seconds (James)`
 
+
+
+## Images
+
+To try the images:
+
+https://hub.docker.com/repository/docker/time4tea/http4k-functional - Native
+
+https://hub.docker.com/repository/docker/time4tea/http4k-functional-jib - JVM Version using Jib
+
+
+
