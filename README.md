@@ -8,6 +8,8 @@ make a faithful translation, any differences are not intentional.
 
 The http4k version is not optimised - I tried to just make the simplest version that would work.
 
+The results are summarised in the Observable Notebook at: https://observablehq.com/d/53eb5df0da9b77fa
+
 According to the talk, the Spring Boot version starts up in:
 
 `Azure Container CPU 0.25/RAM 0.5   - JVM 21 seconds, Native 0.106 seconds (Seb)`
